@@ -1,17 +1,18 @@
 use crate::models::role::Role;
-use crate::models::user::IUser;
+use crate::models::user::User;
 
 #[derive(Clone)]
-pub struct IOrganization {
+pub struct Organization {
     pub id: String,
     pub name: String,
     pub org_type: String,
-    pub employee: Vec<IUser>,
+    pub employee: Vec<User>,
     pub roles: Vec<Role>,
 }
 
-impl IOrganization {
-    fn edit(id: String, org: IOrganization) {}
+impl Organization {
+    fn create(org: Organization) {}
+    fn edit(id: String, org: Organization) {}
     fn delete(id: String) {}
     fn create_role(role: Role) {}
     fn edit_role(id: String, role: Role) {}

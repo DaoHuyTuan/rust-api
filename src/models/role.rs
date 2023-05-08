@@ -9,4 +9,6 @@ pub struct Role {
 
 impl Role {
     pub fn create(role: Role) {}
+    pub fn edit(role: Role) {}
+    pub fn delete(role: Role) {}
 }

@@ -1,14 +1,17 @@
 // use crate::apis::user::User;
 
+pub mod models;
+pub mod services;
+pub mod utils;
+
 use crate::models::organazition::Organization;
 use crate::models::permission::Permission;
 use crate::models::role::Role;
 use crate::models::user::User;
+use crate::services::user_service::UserServices;
 
-pub mod models;
-pub mod utils;
 fn main() {
-    let admin = Permission {
+    let admin: Permission = Permission {
         id: "admin".to_string(),
         name: "admin".to_string(),
         value: "admin".to_string(),
@@ -45,5 +48,6 @@ fn main() {
         employee: vec![user],
         roles: roles,
     };
-    println!("Roles: {:#?}", google.employee);
+
+    println!("Roles: {:#?}", user);
 }

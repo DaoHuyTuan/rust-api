@@ -3,5 +3,6 @@
   // "editor.defaultFormatter": "rust-lang.rust-analyzer",
   "rust-analyzer.completion.privateEditable.enable": true,
   "rust-analyzer.completion.autoimport.enable": true,
-  "rust-analyzer.completion.addCallParenthesis": false
+  "rust-analyzer.completion.addCallParenthesis": false,
+  "editor.tabSize": 2
 }

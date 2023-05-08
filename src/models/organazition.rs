@@ -14,8 +14,4 @@ impl Organization {
     fn create(org: Organization) {}
     fn edit(id: String, org: Organization) {}
     fn delete(id: String) {}
-    fn create_role(role: Role) {}
-    fn edit_role(id: String, role: Role) {}
-    fn delete_role(id: String) {}
-    fn toggle_permission(permission_id: String, role_id: String) {}
 }

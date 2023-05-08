@@ -7,4 +7,10 @@ pub struct User {
     pub role: Vec<Role>,
 }
 
-impl User {}
+impl User {
+    pub fn create(user: User) {}
+    pub fn edit(user: User) {}
+    pub fn delete(id: String) {}
+    pub fn assign_role_to_user(user_id: String, role_id: String) {}
+    pub fn assign_permission_to_role
+}
